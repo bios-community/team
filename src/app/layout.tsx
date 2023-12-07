@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const manrope = Manrope({
+    display: "swap",
+    subsets: ["latin"],
+    variable: "--font-manrope",
+});
 
 export const metadata: Metadata = {
     title: "BIOS Team Recruitment",
@@ -18,14 +22,14 @@ export default function RootLayout({
 }) {
     return (
         <html lang='en'>
-            <body className={inter.className}>
+            <body className={`${manrope.className} tracking-wide`}>
                 <ThemeProvider
                     attribute='class'
                     defaultTheme='system'
                     enableSystem
                     disableTransitionOnChange
                 >
-                    <Navbar className='view-container mt-8' />
+                    <Navbar className='view-container' />
                     {children}
                 </ThemeProvider>
             </body>
