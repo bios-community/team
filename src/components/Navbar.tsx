@@ -7,10 +7,7 @@ import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import { ModeToggle } from "./ModeToggle";
 import { Badge } from "./ui/badge";
-
-interface NavbarProps extends React.HTMLAttributes<HTMLDivElement> {
-    className?: string;
-}
+import { NavbarProps } from "@/types";
 
 const Navbar = ({ className, ...props }: NavbarProps) => {
     const [isOpen, setIsOpen] = useState(false);

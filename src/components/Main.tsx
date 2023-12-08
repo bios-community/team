@@ -1,6 +1,4 @@
-interface MainProps extends React.HTMLAttributes<HTMLDivElement> {
-    className?: string;
-}
+import { MainProps } from "@/types";
 
 const Main = ({ className, ...props }: MainProps) => {
     return (

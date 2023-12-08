@@ -1,8 +1,5 @@
+import { SidebarProps } from "@/types";
 import Link from "next/link";
-
-interface SidebarProps extends React.HTMLAttributes<HTMLDivElement> {
-    className?: string;
-}
 
 const Sidebar = ({ className, ...props }: SidebarProps) => {
     return (
