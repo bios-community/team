@@ -112,7 +112,7 @@
     }
 
     .sidebar a {
-        @apply underline decoration-custom hover:no-underline focus-visible:no-underline before:content-['>'] before:text-sm before:text-black/60 dark:before:text-white/60 before:mr-2 before:no-underline before:inline-block before:align-top my-2 block;
+        @apply decoration-blue-600 dark:decoration-blue-400 hover:underline focus-visible:underline before:content-['>'] before:text-base before:text-blue-600 dark:before:text-blue-400 before:mr-2 before:no-underline before:inline-block before:align-top before:font-semibold block;
     }
 
     .sidebar ul ul {
@@ -121,5 +121,9 @@
 
     .sidebar ul ul ul {
         @apply ml-16;
+    }
+
+    .sidebar li {
+        @apply my-4;
     }
 }

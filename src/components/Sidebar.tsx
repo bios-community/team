@@ -1,23 +1,91 @@
 import { SidebarProps } from "@/types";
 import Link from "next/link";
 
+const sideBarContent = [
+    {
+        title: "Introduction",
+        id: "introduction",
+        subSections: [
+            {
+                title: "What is BIO-S?",
+                id: "what-is-bios",
+            },
+            {
+                title: "Brief history of BIO-S",
+                id: "brief-history-of-bios",
+            },
+            {
+                title: "Meet the founder - Adarsh Dubey",
+                id: "meet-the-founder",
+            },
+        ],
+    },
+    {
+        title: "Why BIO-S?",
+        id: "why-bios",
+        subSections: [
+            {
+                title: "Advocating open source",
+                id: "advocating-open-source",
+            },
+            {
+                title: "Embracing community culture",
+                id: "embracing-community-culture",
+            },
+            {
+                title: "Vision behind BIO-S",
+                id: "vision-behind-bios",
+            },
+        ],
+    },
+    {
+        title: "Join Us!",
+        id: "join-us",
+        subSections: [
+            {
+                title: "Who am I looking for?",
+                id: "who-am-i-looking-for",
+            },
+            {
+                title: "Benefits of joining BIO-S",
+                id: "benefits",
+            },
+            {
+                title: "Future plans",
+                id: "future-plans",
+            },
+        ],
+    },
+    {
+        title: "Connect with us",
+        id: "connect-with-us",
+    },
+    {
+        title: "TL;DR",
+        id: "tldr",
+    },
+];
+
 const Sidebar = ({ className, ...props }: SidebarProps) => {
     return (
         <aside className={`sidebar ${className}`} {...props}>
             <ul>
-                <li>
-                    <Link href='#introduction'>Introduction</Link>
-                    <ul>
-                        <li>
-                            <Link href='#what-is-bios'>What is BIO-S?</Link>
-                        </li>
-                        <li>
-                            <Link href='#brief-history-of-bios'>
-                                Brief history of BIO-S
-                            </Link>
-                        </li>
-                    </ul>
-                </li>
+                {sideBarContent.map((section) => (
+                    <li key={section.id}>
+                        <Link href={`#${section.id}`}>{section.title}</Link>
+                        {section.subSections && (
+                            <ul>
+                                {section.subSections.map((subSection) => (
+                                    <li key={subSection.id}>
+                                        <Link href={`#${subSection.id}`}>
+                                            {subSection.title}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </li>
+                ))}
             </ul>
         </aside>
     );
