@@ -11,8 +11,23 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-    title: "BIOS Team Recruitment",
-    description: "Come in, we might have a place for you too!",
+    title: "BIO-S Community • Join the crew",
+    description:
+        "BIO-S is an open source, student led community based in Nashik. We foster community culture and help folks get started in their tech journeys.",
+    metadataBase: new URL("https://bios-team.vercel.app"),
+    openGraph: {
+        title: "BIO-S Community • Join the crew",
+        description:
+            "BIO-S is an open source, student led community based in Nashik. We foster community culture and help folks get started in their tech journeys.",
+        url: "https://bios-team.vercel.app",
+        siteName: "BIO-S Community • Join the crew",
+        images: {
+            url: "/opengraph-image.png",
+            width: 1920,
+            height: 960,
+            alt: "BIO-S: Where open source enthusiasts unite, learn and build together.",
+        },
+    },
 };
 
 export default function RootLayout({
