@@ -84,4 +84,42 @@
         @apply box-border mx-auto;
         @apply w-[1100px] max-2xl:w-[1100px] max-xl:w-[920px] max-lg:w-[680px] max-md:w-[440px] max-sm:w-full px-5;
     }
+
+    .content h1 {
+        @apply before:content-['<h1>'] after:content-['</h1>'];
+        @apply text-3xl lg:text-4xl font-bold mt-10 lg:mt-0;
+    }
+
+    .content h2 {
+        @apply before:content-['<h2>'] after:content-['</h2>'];
+        @apply text-2xl lg:text-3xl font-bold mt-7 lg:mt-10 mb-4;
+    }
+
+    .content h3 {
+        @apply before:content-['<h3>'] after:content-['</h3>'];
+        @apply text-xl lg:text-2xl font-semibold mt-5 lg:mt-6 mb-2;
+    }
+
+    .content h1,
+    .content h2,
+    .content h3 {
+        @apply before:mr-1 before:text-custom before:text-xs lg:before:text-base before:font-medium;
+        @apply after:ml-1  after:text-custom after:text-xs lg:after:text-base after:font-medium;
+    }
+
+    .content p {
+        @apply tracking-wide my-2;
+    }
+
+    .sidebar a {
+        @apply underline decoration-custom hover:no-underline focus-visible:no-underline before:content-['>'] before:text-sm before:text-black/60 dark:before:text-white/60 before:mr-2 before:no-underline before:inline-block before:align-top my-2 block;
+    }
+
+    .sidebar ul ul {
+        @apply ml-8;
+    }
+
+    .sidebar ul ul ul {
+        @apply ml-16;
+    }
 }
