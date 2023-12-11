@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { Twitter, Menu, X, ExternalLink } from "lucide-react";
+import { Menu, X, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import { ModeToggle } from "./ModeToggle";
@@ -50,18 +50,7 @@ const Navbar = ({ className, ...props }: NavbarProps) => {
                     <div className='flex gap-4 lg:gap-5'>
                         <ModeToggle />
                         <Link
-                            href='https://twitter.com/bios_twt'
-                            className={buttonVariants({
-                                variant: "outline",
-                                size: "icon",
-                            })}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                        >
-                            <Twitter size={18} strokeWidth={1.5} />
-                        </Link>
-                        <Link
-                            href='https://bio.link/bios'
+                            href='https://bento.me/bios'
                             className={buttonVariants({
                                 variant: "outline",
                                 size: "icon",
@@ -73,7 +62,7 @@ const Navbar = ({ className, ...props }: NavbarProps) => {
                         </Link>
                     </div>
                     <Link
-                        href='https://discord.gg/ZQGRW6uCXA'
+                        href='https://chat.whatsapp.com/DBYHmKyGarL1YqRx8INeu9'
                         className={buttonVariants({
                             variant: "outline",
                             size: "lg",
@@ -81,10 +70,10 @@ const Navbar = ({ className, ...props }: NavbarProps) => {
                         target='_blank'
                         rel='noopener noreferrer'
                     >
-                        Discord Server
+                        WhatsApp Community
                     </Link>
                     <Link
-                        href='/'
+                        href='https://tally.so/r/mVzBrJ'
                         className={buttonVariants({
                             variant: "custom",
                             size: "lg",
