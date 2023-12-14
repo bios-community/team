@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -47,6 +48,7 @@ export default function RootLayout({
                     <Navbar className='view-container' />
                     {children}
                 </ThemeProvider>
+                <Analytics />
             </body>
         </html>
     );
