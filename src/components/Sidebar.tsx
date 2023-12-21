@@ -21,24 +21,6 @@ const sideBarContent = [
         ],
     },
     {
-        title: "Why BIO-S?",
-        id: "why-bios",
-        subSections: [
-            {
-                title: "Advocating open source",
-                id: "advocating-open-source",
-            },
-            {
-                title: "Embracing community culture",
-                id: "embracing-community-culture",
-            },
-            {
-                title: "Vision behind BIO-S",
-                id: "vision-behind-bios",
-            },
-        ],
-    },
-    {
         title: "Join Us!",
         id: "join-us",
         subSections: [

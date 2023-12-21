@@ -100,6 +100,10 @@
         @apply text-xl lg:text-2xl font-semibold mt-5 lg:mt-6 mb-2;
     }
 
+    .content h4 {
+        @apply text-xl lg:text-2xl font-semibold mt-5 lg:mt-6 mb-2;
+    }
+
     .content h1,
     .content h2,
     .content h3 {
@@ -107,8 +111,21 @@
         @apply after:ml-1  after:text-custom after:text-xs lg:after:text-base after:font-medium;
     }
 
-    .content p {
-        @apply tracking-wide my-2;
+    .content p,
+    .content ul {
+        @apply tracking-wide leading-relaxed my-4 text-white/80;
+    }
+
+    .content a {
+        @apply text-white font-medium underline hover:no-underline focus-visible:no-underline;
+    }
+
+    .content ul {
+        @apply list-disc list-inside;
+    }
+
+    .content .note {
+        @apply bg-yellow-50/10 p-2 rounded-md;
     }
 
     .sidebar a {
