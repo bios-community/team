@@ -1,5 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MainProps } from "@/types";
+
+import {
+    adarshImage1,
+    adarshImage2,
+    ghwImage1,
+    ghwImage2,
+    initativeImage,
+    connectImage,
+    rolesImage,
+} from "@/assets";
 
 const Main = ({ className, ...props }: MainProps) => {
     return (
@@ -25,18 +36,40 @@ const Main = ({ className, ...props }: MainProps) => {
                 </Link>
                 .
             </p>
-            <p>
-                If you want to skip to some specific part, there’s a table of
-                content to help you. There’s also a TL’DR version of this, it’s
-                at the bottom of the page.
-            </p>
             <p className='note'>
                 Note: This page and form are for folks who want to join the
                 BIO-S Community as a team member. If you want to join as a
                 community member, there’s no page/form. Just join our WhatsApp
                 community or Discord server and you’re in!
             </p>
-            <h3 id='what-is-bios'>What is BIO-S?</h3>
+            <Image
+                src={initativeImage}
+                alt='Initiative by BIO-S'
+                className='max-w-lg mx-auto my-5 w-full rounded-md'
+            />
+            <h2 id='summary'>Summary (TL;DR)</h2>
+            <p>
+                Adarsh introduces BIO-S Community, a student-led open-source
+                community promoting technology and community culture. Founded in
+                November 2022, BIO-S aims to include individuals of all
+                backgrounds and interests. Adarsh, the founder, shares his
+                journey and achievements, emphasizing BIO-S's commitment to open
+                source, community, and diversity.
+            </p>
+            <p>
+                Recruitment is open for various roles: Core Team, Development
+                Team, and Social Media Team. No specific skills required;
+                passion for tech and open source is key. Benefits include
+                learning, collaboration, and future opportunities. BIO-S plans
+                monthly meetups, online sessions, hackathons, and more. Join the
+                community through WhatsApp, Discord, or the provided link.
+            </p>
+            <p>
+                In summary, BIO-S is a diverse, volunteer-driven community
+                fostering collaboration, learning, and growth in the tech and
+                open-source space.
+            </p>
+            <h2 id='what-is-bios'>What is BIO-S?</h2>
             <p>
                 BIO-S is a student-led community that promotes open source and
                 community culture in Nashik and globally. We also advocate for
@@ -71,6 +104,18 @@ const Main = ({ className, ...props }: MainProps) => {
                 included not based on their gender or background, but on their
                 shared interests.
             </p>
+            <div className='grid gap-5 grid-cols-1 lg:grid-cols-2'>
+                <Image
+                    src={ghwImage2}
+                    alt='GHW Event Image'
+                    className='rounded-md'
+                />
+                <Image
+                    src={ghwImage1}
+                    alt='GHW Event Image'
+                    className='rounded-md'
+                />
+            </div>
             <p>
                 Now, talking about what BIO-S has accomplished, here are a few
                 things I want to highlight.
@@ -139,9 +184,21 @@ const Main = ({ className, ...props }: MainProps) => {
                 </Link>
                 .
             </p>
+            <div className='grid gap-5 grid-cols-1 lg:grid-cols-2'>
+                <Image
+                    src={adarshImage1}
+                    alt="Adarsh Dubey's image"
+                    className='rounded-md'
+                />
+                <Image
+                    src={adarshImage2}
+                    alt="Adarsh Dubey's image"
+                    className='rounded-md'
+                />
+            </div>
             <h2 id='join-us'>Join Us!</h2>
             <h3 id='who-am-i-looking-for'>Who am I looking for?</h3>
-            <p>
+            <p className='important'>
                 Let’s make it clear, I’m looking for someone who’s passionate
                 about tech and open source. That’s all, quite literally.
             </p>
@@ -185,6 +242,11 @@ const Main = ({ className, ...props }: MainProps) => {
                 doesn’t mean you can't work with another team; you definitely
                 can!
             </p>
+            <Image
+                src={rolesImage}
+                alt='Roles in BIO-S'
+                className='max-w-lg mx-auto my-5 w-full rounded-md'
+            />
             <h3 id='benefits'>Benefits of joining BIO-S</h3>
             <p>
                 Below are some perks of joining BIO-S as a team member. Now,
@@ -242,6 +304,11 @@ const Main = ({ className, ...props }: MainProps) => {
                 college, you’re in luck!
             </p> */}
             <h2 id='connect-with-us'>Connect with us</h2>
+            <Image
+                src={connectImage}
+                alt='Connect with us'
+                className='max-w-lg mx-auto my-5 w-full rounded-md'
+            />
             <p>You can connect with the community in various ways.</p>
             <p>
                 The main ones are joining the{" "}
@@ -260,7 +327,7 @@ const Main = ({ className, ...props }: MainProps) => {
                 >
                     Discord Server
                 </Link>
-                . In addition to that, all the methods are listed here:
+                . In addition to that, all the methods are listed here:{" "}
                 <Link
                     href='https://bento.me/bios'
                     target='_blank'
@@ -269,27 +336,9 @@ const Main = ({ className, ...props }: MainProps) => {
                     https://bento.me/bios
                 </Link>
             </p>
-            <h2 id='tldr'>TL;DR</h2>
             <p>
-                Adarsh introduces BIO-S Community, a student-led open-source
-                community promoting technology and community culture. Founded in
-                November 2022, BIO-S aims to include individuals of all
-                backgrounds and interests. Adarsh, the founder, shares his
-                journey and achievements, emphasizing BIO-S's commitment to open
-                source, community, and diversity.
-            </p>
-            <p>
-                Recruitment is open for various roles: Core Team, Development
-                Team, and Social Media Team. No specific skills required;
-                passion for tech and open source is key. Benefits include
-                learning, collaboration, and future opportunities. BIO-S plans
-                monthly meetups, online sessions, hackathons, and more. Join the
-                community through WhatsApp, Discord, or the provided link.
-            </p>
-            <p>
-                In summary, BIO-S is a diverse, volunteer-driven community
-                fostering collaboration, learning, and growth in the tech and
-                open-source space.
+                Thank you for intenting to join the team. See you in the meet
+                session!
             </p>
         </div>
     );

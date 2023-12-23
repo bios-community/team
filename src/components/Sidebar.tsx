@@ -5,11 +5,15 @@ const sideBarContent = [
     {
         title: "Introduction",
         id: "introduction",
+    },
+    {
+        title: "Summary (TL;DR)",
+        id: "summary",
+    },
+    {
+        title: "What is BIO-S?",
+        id: "what-is-bios",
         subSections: [
-            {
-                title: "What is BIO-S?",
-                id: "what-is-bios",
-            },
             {
                 title: "Brief history of BIO-S",
                 id: "brief-history-of-bios",
@@ -41,10 +45,6 @@ const sideBarContent = [
     {
         title: "Connect with us",
         id: "connect-with-us",
-    },
-    {
-        title: "TL;DR",
-        id: "tldr",
     },
 ];
 
