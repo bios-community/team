@@ -236,11 +236,11 @@ const Main = ({ className, ...props }: MainProps) => {
                 </li>
                 <li>...and much more!</li>
             </ul>
-            <p>
+            {/* <p>
                 Also, we're planning to open a club in our college (K. K. Wagh)
                 as an extension of the community, so if you’re in the same
                 college, you’re in luck!
-            </p>
+            </p> */}
             <h2 id='connect-with-us'>Connect with us</h2>
             <p>You can connect with the community in various ways.</p>
             <p>
