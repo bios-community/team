@@ -222,6 +222,12 @@ const Main = ({ className, ...props }: MainProps) => {
                 want individuals who are passionate about open source,
                 community, and growing BIO-S.
             </p>
+            <h4>Community Manager</h4>
+            <p>
+                Do you like talking to people? Then this is for you. You'll be
+                interacting directly with community. You'll be responsible to
+                understand what the community needs and why do they need.
+            </p>
             <h4>Development Team</h4>
             <p>
                 You’ll mostly be working on code and BIO-S’ GitHub organization.
